@@ -32,7 +32,7 @@ class Assignment(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(max_length=30)
-    courses = models.ManyToManyField(Course, related_name="courses")
+    courses = models.ManyToManyField(Course, related_name="Tag")
 
     def __str__(self):
         return self.name
